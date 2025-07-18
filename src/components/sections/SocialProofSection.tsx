@@ -1,14 +1,19 @@
 import React from 'react';
 import { CONTENT } from '../../constants/content';
+import InnovateCorpLogo from '../../assets/companyLogos/InnovateCorp.png';
+import QuantumLeapLogo from '../../assets/companyLogos/QuantumLeap.png';
+import DataWeaveLogo from '../../assets/companyLogos/DataWeave.png';
+import NextGenLogo from '../../assets/companyLogos/NextGen.png';
+import ApexLogo from '../../assets/companyLogos/Apex.png';
 
 export const SocialProofSection: React.FC = () => {
-  const logos = {
-    'InnovateCorp': '/src/assets/companyLogos/InnovateCorp.png',
-    'QuantumLeap Tech': '/src/assets/companyLogos/QuantumLeap.png',
-    'DataWeave Solutions': '/src/assets/companyLogos/DataWeave.png',
-    'NextGen Systems': '/src/assets/companyLogos/NextGen.png',
-    'Apex Digital': '/src/assets/companyLogos/Apex.png',
-  };
+const logos = {
+  'InnovateCorp': InnovateCorpLogo,
+  'QuantumLeap Tech': QuantumLeapLogo,
+  'DataWeave Solutions': DataWeaveLogo,
+  'NextGen Systems': NextGenLogo,
+  'Apex Digital': ApexLogo,
+};
 
   return (
     <section className="py-12 sm:py-16 bg-gray-50">
