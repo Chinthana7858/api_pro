@@ -1,6 +1,6 @@
 # API PRO - API Management Platform
 
-A modern, responsive React application for API management built with TypeScript, Vite, and Tailwind CSS. API PRO provides a comprehensive platform for managing APIs with features like documentation, pricing plans, team management, and more.
+A modern, responsive React application for API management built with TypeScript, Vite, and Tailwind CSS.
 
 ## ✨ Features
 
@@ -9,11 +9,32 @@ A modern, responsive React application for API management built with TypeScript,
 - ⚡ **Fast Performance** - Built with Vite for lightning-fast development and builds
 - 🔒 **Type Safety** - Full TypeScript support for robust development
 - 🧩 **Component Architecture** - Well-organized, reusable component structure
-- 🎬 **Video Background** - Engaging hero section with video background
-- 📊 **API Documentation** - Interactive API documentation with examples
-- 👥 **Team Management** - Dynamic team member display with API integration
-- 💳 **Pricing Plans** - Responsive pricing cards with feature comparison
-- 📞 **Contact Forms** - Functional contact forms with validation
+
+## 🧠 AI Tools Used
+
+### 1. **Lovable** – *UI Design Assistant*
+I used **Lovable** to generate and refine the UI designs for all five pages of the website. It provided design structure, layout ideas, and visual inspiration for the homepage, pricing cards, team section, and form elements. This accelerated the prototyping process and ensured a consistent, modern look throughout the site.
+
+### 2. **GitHub Copilot** – *AI Code Assistant*
+I used **GitHub Copilot** as my coding assistant throughout the project. It helped with:
+- Structuring React + TypeScript components
+- Writing reusable UI elements
+- Creating API fetching logic
+- Managing props and state
+- Handling form interactions and layout adjustments
+
+Copilot saved time by suggesting boilerplate and completing repetitive code blocks effectively.
+
+---
+
+## 📝 Notes & Key Decisions
+
+- The project was built with **React + TypeScript** and powered by **Vite** for fast build times.
+- I used **Tailwind CSS** for a utility-first, fully responsive design system.
+- A **background video** is implemented in the Hero Section with controlled playback speed for a smooth visual experience.
+- Team data is dynamically fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) and rendered using profile cards.
+- All assets and components are organized into modular folders (`assets`, `components`, `pages`, `services`) for scalability and maintainability.
+- The site is **fully responsive** and tested across **mobile, tablet, and desktop** screens.
 
 ## 🚀 Quick Start
 
@@ -22,13 +43,13 @@ A modern, responsive React application for API management built with TypeScript,
 Before you begin, ensure you have the following installed on your system:
 
 - **Node.js** (version 16.0 or higher) - [Download here](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn** package manager
+- **npm** (comes with Node.js) package manager
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Chinthana7858/api_pro
    cd api-pro
    ```
 
@@ -36,18 +57,10 @@ Before you begin, ensure you have the following installed on your system:
    ```bash
    npm install
    ```
-   or if you're using yarn:
-   ```bash
-   yarn install
-   ```
 
 3. **Start the development server**
    ```bash
    npm run dev
-   ```
-   or with yarn:
-   ```bash
-   yarn dev
    ```
 
 4. **Open your browser**
@@ -103,121 +116,5 @@ api-pro/
 - **Build Tool**: Vite 7.0.4
 - **Styling**: Tailwind CSS 4.1.11
 - **Routing**: React Router DOM 7.7.0
-- **Linting**: ESLint 9.30.1
-- **Code Quality**: TypeScript ESLint 8.35.1
-
-## 🌐 Browser Support
-
-API PRO is optimized for modern browsers and supports:
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## 📱 Responsive Design
-
-The application is fully responsive and optimized for:
-
-- **Mobile devices**: 320px - 640px
-- **Tablets**: 640px - 1024px
-- **Laptops**: 1024px - 1440px
-- **Desktops**: 1440px+
-
-## 🔧 Development
-
-### Adding New Components
-
-1. Create your component in the appropriate directory under `src/components/`
-2. Export it from the relevant `index.ts` file
-3. Import and use it in your pages or other components
-
-### Styling Guidelines
-
-- Use Tailwind CSS utility classes for styling
-- Follow the responsive design patterns established in existing components
-- Maintain consistent spacing using Tailwind's spacing scale
-
-### Code Quality
-
-The project includes ESLint configuration for maintaining code quality:
-
-```bash
-# Run linting
-npm run lint
-
-# Auto-fix linting issues where possible
-npm run lint -- --fix
-```
-
-## 🚀 Production Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-This will:
-- Compile TypeScript to JavaScript
-- Bundle and optimize all assets
-- Generate a `dist/` folder with production-ready files
-
-To preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## 🔄 API Integration
-
-The application includes mock API services for demonstration. To integrate with a real API:
-
-1. Update the API service files in `src/services/`
-2. Replace mock endpoints with your actual API URLs
-3. Update the data types in the service files as needed
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Make your changes
-4. Run tests and linting: `npm run lint`
-5. Commit your changes: `git commit -m 'Add some feature'`
-6. Push to the branch: `git push origin feature/your-feature-name`
-7. Open a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-**Port already in use**
-- Vite will automatically find an available port, typically 5174 or 5175
-
-**Build errors**
-- Ensure all dependencies are installed: `npm install`
-- Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
-
-**TypeScript errors**
-- Check your TypeScript version matches the project requirements
-- Run `npm run build` to see all TypeScript errors
-
-**Styling issues**
-- Ensure Tailwind CSS is properly configured
-- Check that the CSS imports are correct in `src/index.css`
-
-### Getting Help
-
-If you encounter any issues:
-1. Check the browser console for error messages
-2. Ensure you're using Node.js version 16+
-3. Try clearing your browser cache
-4. Restart the development server
-
 ---
 
-Built with ❤️ using React, TypeScript, and Vite
